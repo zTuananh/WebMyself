@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân hiện đại, chuyên nghiệp thiết kế bởi Lập trình viên Web">
+    <title>Portfolio Cá Nhân | Creative Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Dev<span class="gradient-text">Portfolio.</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <!-- Extra 1: Theme Switcher -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Đổi giao diện">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="badge"><i class="fa-solid fa-code"></i> Frontend Developer</span>
+                    <h1>Xin chào, tôi là <br><span class="gradient-text">Lập Trình Viên Web</span></h1>
+                    <p>Tôi chuyên thiết kế & phát triển giao diện website hiện đại, tối ưu hiệu năng và trải nghiệm người dùng vượt trội.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Xem Dự Án</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Liên Hệ</a>
+                    </div>
+                </div>
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar-tron">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container about-container">
+                <div class="about-img-box">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Không gian làm việc lập trình" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Giới Thiệu Bản Thân</h2>
+                    <p class="about-text">
+                        Với đam mê sáng tạo nội dung số và lập trình web, tôi luôn cập nhật những công nghệ tiên tiến nhất như HTML5, CSS3, JavaScript ES6+ để mang lại sản phẩm tốt nhất.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>2+</h3>
+                            <p>Năm kinh nghiệm</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Dự án hoàn thành</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Chuẩn W3C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-card">
+            <div class="container">
+                <h2 class="section-title text-center">Kỹ Năng Chuyên Môn</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                        <h4>CSS3 / SCSS</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-js skill-icon" style="color: #f7df1e;"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-react skill-icon" style="color: #61dafb;"></i>
+                        <h4>React.js</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-git-alt skill-icon" style="color: #f05032;"></i>
+                        <h4>Git & GitHub</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-solid fa-mobile-screen-button skill-icon" style="color: #a855f7;"></i>
+                        <h4>Responsive Design</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Dự Án Nổi Bật</h2>
+                <p class="section-subtitle text-center">Những sản phẩm được xây dựng cẩn thận và chăm chút từng chi tiết</p>
+
+                <!-- Extra 2: Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tất cả</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-img-holder">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80" alt="Website Thương Mại Điện Tử" class="project-img">
+                            <span class="project-tag">Web App</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Nền Tảng E-Commerce</h3>
+                            <p>Hệ thống bán hàng trực tuyến tích hợp giỏ hàng và thanh toán nhanh chóng.</p>
+                            <button class="btn-secondary open-modal" 
+                                    data-title="Nền Tảng E-Commerce Hiện Đại" 
+                                    data-desc="Dự án bao gồm giao diện xem sản phẩm, tìm kiếm thời gian thực, quản lý giỏ hàng thông minh và tối ưu hoá giao diện điện thoại."
+                                    data-img="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80">
+                                Chi tiết <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card" data-category="design">
+                        <div class="project-img-holder">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Giao diện Mobile App Health Care" class="project-img">
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>App Theo Dõi Sức Khỏe</h3>
+                            <p>Thiết kế UX/UI hiện đại với tông màu dịu nhẹ và điều hướng trực quan.</p>
+                            <button class="btn-secondary open-modal" 
+                                    data-title="Ứng Dụng Sức Khỏe Cá Nhân" 
+                                    data-desc="Bản thiết kế hệ thống theo dõi nhịp tim, bước chân và giấc ngủ với đồ thị tương tác thân thiện."
+                                    data-img="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80">
+                                Chi tiết <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-img-holder">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Bảng điều khiển Analytics Dashboard" class="project-img">
+                            <span class="project-tag">Web App</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard Phân Tích Dữ Liệu</h3>
+                            <p>Giao diện quản trị hệ thống phân tích dữ liệu kinh doanh realtime.</p>
+                            <button class="btn-secondary open-modal" 
+                                    data-title="Bảng Điều Khiển Quản Trị Admin" 
+                                    data-desc="Trang Dashboard với Dark Mode tích hợp, hiển thị biểu đồ doanh thu và thống kê người dùng theo thời gian thực."
+                                    data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
+                                Chi tiết <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-card">
+            <div class="container">
+                <h2 class="section-title text-center">Gửi Tin Nhắn Cho Tôi</h2>
+                <p class="section-subtitle text-center">Bạn có dự án mới? Hãy cùng trao đổi và tạo nên sản phẩm tuyệt vời!</p>
+                
+                <!-- Extra 4: Form Validation & Interactive Feedback -->
+                <form id="contact-form" class="contact-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="name">Họ và Tên</label>
+                        <input type="text" id="name" name="name" placeholder="Nguyễn Văn A">
+                        <span class="error-msg" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Địa chỉ Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                        <span class="error-msg" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Nội dung tin nhắn</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Mô tả công việc hoặc ý tưởng của bạn..."></textarea>
+                        <span class="error-msg" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Gửi Ngay</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 DevPortfolio. Bản quyền thuộc về Lập Trình Viên.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Extra 3: Interactive Lightbox / Modal -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Đóng popup">&times;</button>
+            <img id="modal-img" src="" alt="Hình ảnh chi tiết dự án" class="modal-img">
+            <h3 id="modal-title">Tiêu đề dự án</h3>
+            <p id="modal-desc">Mô tả chi tiết dự án...</p>
+        </div>
+    </div>
+
+    <!-- Extra 4 Continued: Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
